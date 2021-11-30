@@ -1,10 +1,3 @@
-//
-//  BannerSampleApp.swift
-//  BannerSample
-//
-//  Created by rh on 2021/11/30.
-//
-
 import SwiftUI
 
 @main

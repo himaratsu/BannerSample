@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		365750CB2756011900730132 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365750CA2756011900730132 /* ContentView.swift */; };
 		365750CD2756011A00730132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365750CC2756011A00730132 /* Assets.xcassets */; };
 		365750D02756011A00730132 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365750CF2756011A00730132 /* Preview Assets.xcassets */; };
+		365750D92756020C00730132 /* MicrocmsSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 365750D82756020C00730132 /* MicrocmsSDK */; };
+		365750DB2756027400730132 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365750DA2756027400730132 /* Banner.swift */; };
+		365750DF275603CF00730132 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365750DE275603CF00730132 /* ImageView.swift */; };
+		365750E12756042900730132 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365750E02756042900730132 /* ImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,9 @@
 		365750CC2756011A00730132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		365750CF2756011A00730132 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		365750D12756011A00730132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		365750DA2756027400730132 /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		365750DE275603CF00730132 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		365750E02756042900730132 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				365750D92756020C00730132 /* MicrocmsSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +62,9 @@
 			children = (
 				365750C82756011900730132 /* BannerSampleApp.swift */,
 				365750CA2756011900730132 /* ContentView.swift */,
+				365750DE275603CF00730132 /* ImageView.swift */,
+				365750E02756042900730132 /* ImageLoader.swift */,
+				365750DA2756027400730132 /* Banner.swift */,
 				365750CC2756011A00730132 /* Assets.xcassets */,
 				365750D12756011A00730132 /* Info.plist */,
 				365750CE2756011A00730132 /* Preview Content */,
@@ -85,6 +96,9 @@
 			dependencies = (
 			);
 			name = BannerSample;
+			packageProductDependencies = (
+				365750D82756020C00730132 /* MicrocmsSDK */,
+			);
 			productName = BannerSample;
 			productReference = 365750C52756011900730132 /* BannerSample.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +126,9 @@
 				Base,
 			);
 			mainGroup = 365750BC2756011900730132;
+			packageReferences = (
+				365750D72756020C00730132 /* XCRemoteSwiftPackageReference "microcms-ios-sdk" */,
+			);
 			productRefGroup = 365750C62756011900730132 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				365750DF275603CF00730132 /* ImageView.swift in Sources */,
 				365750CB2756011900730132 /* ContentView.swift in Sources */,
+				365750E12756042900730132 /* ImageLoader.swift in Sources */,
 				365750C92756011900730132 /* BannerSampleApp.swift in Sources */,
+				365750DB2756027400730132 /* Banner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		365750D72756020C00730132 /* XCRemoteSwiftPackageReference "microcms-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/microcmsio/microcms-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		365750D82756020C00730132 /* MicrocmsSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 365750D72756020C00730132 /* XCRemoteSwiftPackageReference "microcms-ios-sdk" */;
+			productName = MicrocmsSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 365750BD2756011900730132 /* Project object */;
 }

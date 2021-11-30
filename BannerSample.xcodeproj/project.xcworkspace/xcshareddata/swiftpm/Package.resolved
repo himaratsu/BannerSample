@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MicrocmsSDK",
+        "repositoryURL": "https://github.com/microcmsio/microcms-ios-sdk",
+        "state": {
+          "branch": null,
+          "revision": "86a09d1c8afcc1b801bed0ca124bf436701bec70",
+          "version": "2.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
